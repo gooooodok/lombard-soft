@@ -76,7 +76,6 @@
             <p class="text-muted">
                 В программе параллельно ведутся два вида учета: управленческий и регламентированный. Управленческий учет ведется по предприятию в целом, а регламентированный учет ведется отдельно для каждой организации.
             </p>
-            <!-- <a class="btn btn-default btn-xl sr-button" href="#portfolio">Сколько єто стоит?</a> -->
           </div>
         </div>
       </div>
@@ -153,22 +152,21 @@
 		        	<br>	
 		        	<h5 class="text-faded text-center">Или укажите контакты для связи с вами:</h5>
 		        	<br>
-		        	
-					<form class="form-inline" role="form">
-						<label class="sr-only" for="inlineFormInput">Имя</label>
-						<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Имя">
 
-						<label class="sr-only" for="inlineFormInput">Email</label>
-						<input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="E-mail">
+					<form class="form-inline" id="formMain" method="POST" action="">
+						
+						<input title="Имя" id="name" name="name" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Имя" required oninvalid="this.setCustomValidity('Укажите ваше имя')" oninput="setCustomValidity('')">
 
-						<button type="submit" class="btn btn-primary">Отправить</button>
+						<input title="E-mail" id="email" name="email" type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="E-mail" required oninvalid="this.setCustomValidity('Укажите ваш E-mail')" oninput="setCustomValidity('')">
+
+						<button id="button" type="submit" class="btn btn-primary">Отправить</button>
+						
 					</form>
 
 				</div>
 			</div>
 		</div>
     </section>
-
 
 
 
