@@ -128,8 +128,9 @@
 }
 
 .my_form {
-	width: 530px;
-	margin: 0 auto;
+
+	display: block;
+
 }
 
 .phone_number {
