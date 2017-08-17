@@ -3,7 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */body,html{width:100%;height:100%}
- body{font-family:Merriweather,'Helvetica Neue',Arial,sans-serif}
+ body{font-family:Helvetica}
  hr{max-width:50px;border-width:3px;border-color:rgb(240, 95, 64);}
  hr.light{border-color:rgb(240, 95, 64);}
  a{color:#f05f40;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s}
@@ -84,7 +84,7 @@
  .btn-default.active,.btn-default:active,.open>.btn-default.dropdown-toggle{background-image:none}
  .btn-default.disabled.focus,.btn-default.disabled:focus,.btn-default.disabled:hover,.btn-default[disabled].focus,.btn-default[disabled]:focus,.btn-default[disabled]:hover,fieldset[disabled] .btn-default.focus,fieldset[disabled] .btn-default:focus,fieldset[disabled] .btn-default:hover{border-color:#fff;background-color:#fff}
  .btn-default .badge{color:#fff;background-color:#222}
- 
+
  .btn-primary{color:#fff;border-color:#f05f40;background-color:#f05f40}
  .btn-primary.focus,.btn-primary:focus{color:#fff;border-color:#a4270d;background-color:#eb3812}
  .btn-primary:hover{color:#fff;border-color:#e13612;background-color:#eb3812}
@@ -107,7 +107,7 @@
 }
 
 #iconsss {
-	color: #fff;
+	color: rgb(240, 95, 64);
 
 }
 
@@ -126,5 +126,15 @@
 	border-radius: 5px;
 	background-color: rgb(240, 95, 64);
 }
-02a1ff
-0C70E8
+
+.my_form {
+	width: 530px;
+	margin: 0 auto;
+}
+
+.phone_number {
+		margin: 0 auto;
+		text-align: center;
+}
+
+
