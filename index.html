@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css?ver=2" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
   </head>
 
@@ -55,7 +56,7 @@
     <header class="masthead">
       <div class="header-content">
         <div class="header-content-inner">
-          <h1 id="homeHeading">Программное обеспечение ЛОМБАРД</h1>
+          <h1 id="homeHeading" style="font-family: 'helvetica';";>Программное обеспечение ЛОМБАРД</h1>
           <hr>
           <p id="litle_slogan">Уникальные решения для ломбардной деятельности</p>
           <a class="btn btn-primary btn-xl" href="#about">Узнать больше</a>
@@ -153,14 +154,12 @@
 		        	<h5 class="text-faded text-center">Или укажите контакты для связи с вами:</h5>
 		        	<br>
 
-					<form class="form-inline" id="formMain" method="POST" action="">
-						
-						<input title="Имя" id="name" name="name" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Имя" required oninvalid="this.setCustomValidity('Укажите ваше имя')" oninput="setCustomValidity('')">
-
-						<input title="E-mail" id="email" name="email" type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="E-mail" required oninvalid="this.setCustomValidity('Укажите ваш E-mail')" oninput="setCustomValidity('')">
-
-						<button id="button" type="submit" class="btn btn-primary">Отправить</button>
-						
+					<form class="form-inline" action="form.php" method="POST" onsubmit="return checkForm(this);">
+							<label class="sr-only" for="inputName">Имя</label>
+							<input title="Имя" name="name" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Имя" required oninvalid="this.setCustomValidity('Укажите ваше имя')" oninput="setCustomValidity('')">
+							<label class="sr-only" for="inputEmail">E-mail</label>
+							<input title="E-mail" name="email" type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="E-mail" required oninvalid="this.setCustomValidity('Укажите ваш E-mail')" oninput="setCustomValidity('')">
+							<button type="submit" class="btn btn-primary">Отправить</button>
 					</form>
 
 				</div>
@@ -168,11 +167,10 @@
 		</div>
     </section>
 
-
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -182,6 +180,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 
   </body>
 
