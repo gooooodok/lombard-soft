@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Lombard-Soft</title>
-<meta http-equiv="Refresh" content="3; URL=http://localhost/"> 
+<meta http-equiv="Refresh" content="4; URL=http://localhost/"> 
 </head>
 <body>
 
 <?php 
 
-$sendto   = "	zagraychuk@gmail.com";
+$sendto   = "zagraychuk@gmail.com";
 $username = $_POST['name'];
 $usermail = $_POST['email'];
 
@@ -28,7 +28,7 @@ $msg .= "</body></html>";
 
 
 if(@mail($sendto, $subject, $msg, $headers)) {
-	echo "<center>Письмо отправлено</center>";
+	echo "<center><img src='img/message.jpg'></center>";
 } else {
 	echo "<center>Письмо не отправлено</center>";
 }
