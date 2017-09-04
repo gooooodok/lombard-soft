@@ -145,3 +145,12 @@
 	color: #b3bac5;
 
 }
+
+.pogram_price {
+	padding: 5px 10px 5px 10px;
+	margin: 200px;
+	font-size: 30px;
+	color: #fff;
+	border-radius: 5px;
+	background-color: rgb(240, 95, 64);
+}
