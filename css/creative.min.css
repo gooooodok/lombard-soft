@@ -154,3 +154,12 @@
 	border-radius: 5px;
 	background-color: rgb(240, 95, 64);
 }
+
+.ua {
+	float: left;
+}
+
+.rozdelitel {
+	color: #d3d3d3;
+	float: left;
+}
