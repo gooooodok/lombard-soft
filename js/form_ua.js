@@ -8,7 +8,8 @@ $(document).ready(function() {
 			url: "../form.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Письмо отправлено");
+			// alert("Письмо отправлено");
+			$('#myModal').modal('show');
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
